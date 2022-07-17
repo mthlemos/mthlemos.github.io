@@ -28,6 +28,8 @@ jobs:
         run: npm ci
 
       - name: Build Astro
+        env:
+          GA_ID: ${{ secrets.GA_ID }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
