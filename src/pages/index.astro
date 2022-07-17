@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card";
+import ProjectCards from "../components/ProjectCards";
+---
+
+<Layout title="Matheus Bastos Lemos Portoflio - Home">
+    <main>
+        <Card>
+            <p class="text-5xl font-custom-mono font-medium text-white">{">"}</p>
+            <p class="-mt-[2.85rem] ml-10 text-5xl font-custom-mono font-medium text-white transition-opacity">
+                Matheus <br />
+                Bastos <br />
+                Lemos_
+            </p>
+            <div class="ml-[45rem] -mt-36">
+                <img class="rounded-full" src="/profile-pic.jpg" width="200px" height="200px" />
+            </div>
+            <p class="text-3xl ml-10 -mt-7 font-custom-mono font-normal text-off-white">
+                Computer Engineer
+            </p>
+        </Card>
+        <Card>
+            <h1 class="text-4xl font-black mb-10 underline font-custom-sans text-white">Projects</h1>
+            <ProjectCards client:load />
+        </Card>
+    </main>
+</Layout>
