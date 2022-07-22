@@ -23,8 +23,8 @@ const GA_ID = import.meta.env.GA_ID;
         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Lato:wght@300;400;700;900&display=swap"
         rel="stylesheet" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/partytown" async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
-    <script type="text/partytown" define:vars={{ GA_ID }}>
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+    <script define:vars={{ GA_ID }}>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
